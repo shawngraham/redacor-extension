@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Remove T's from .gov Sites",
+    "version": "1.1",
+    "description": "Removes all occurrences of the letters T, Q, and I from all .gov websites.",
+    "content_scripts": [
+      {
+        "matches": ["*://*.gov/*"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ]
+  }
+  
