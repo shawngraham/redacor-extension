@@ -1,11 +1,11 @@
 {
     "manifest_version": 3,
     "name": "Basic Human Decency",
-    "version": "1.1",
+    "version": "1",
     "description": "Reminds you what they really mean.",
     "content_scripts": [
       {
-        "matches": ["*://*.*/*"],
+        "matches": ["*://*/*"],
         "js": ["content.js"],
         "run_at": "document_idle"
       }
